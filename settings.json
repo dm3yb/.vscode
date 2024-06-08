@@ -126,7 +126,7 @@
 	"workbench.iconTheme": "catppuccin-latte",
 
 	// Import custom CSS for VSCode
-	"vscode_custom_css.imports": ["file:///Users/dmitry.b25/webdev/custom.css"],
+	"vscode_custom_css.imports": ["file:///Users/OSProfileUserName/someFolder/editor.css"],
 
 	/* ------------------------ CURSOR SETTINGS --------------------------- */
 
