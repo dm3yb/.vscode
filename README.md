@@ -1,16 +1,17 @@
-# VSCode Customizations
+# 🎨 VSCode Customizations
 
 > This repository provides a guide to customizing **`Visual Studio Code (VSCode)`** to enhance your development experience. It includes instructions on installing a personal extensions pack, cleaning up unused functions, and changing the sidebar styles using **`custom CSS`**.
 
-- [Extensions:](#extensions)
-- [Cleanup Useless Functions:](#cleanup-useless-functions)
-- [How to Change VSCode Sidebar Styles:](#how-to-change-vscode-sidebar-styles)
+- [🎨 VSCode Customizations](#-vscode-customizations)
+    - [📦 Extensions:](#-extensions)
+    - [🧹 Cleanup Useless Functions:](#-cleanup-useless-functions)
+    - [💅 How to Change VSCode Sidebar Styles](#-how-to-change-vscode-sidebar-styles)
 
 ---
 
 ![VSCode Workspace Preview](./images/vscode-workspace-preview.png)
 
-### Extensions:
+### 📦 Extensions:
 
 I'm using more than `100` extensions to make my developer life better. Listing all of them and keeping them up to date would be challenging, so I've created a **personal Extensions Pack** that I use almost every day:
 
@@ -23,7 +24,7 @@ By following these steps, you can easily set up the same extensions I use to imp
 
 ---
 
-### Cleanup Useless Functions:
+### 🧹 Cleanup Useless Functions:
 
 1. **Remove Unused Icons:**
 	- Right-click on the function or extension you no longer need.
@@ -33,7 +34,7 @@ By following these steps, you can easily set up the same extensions I use to imp
 
 ---
 
-### [How to Change VSCode Sidebar Styles:](#vscode-sidebar-styles):
+### 💅 How to Change VSCode Sidebar Styles
 
 1. **Install the Extension:**
    - Install the [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) extension from the VSCode marketplace.
