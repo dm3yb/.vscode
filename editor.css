@@ -1,0 +1,141 @@
+/* ------------------------ EDITOR GLOBAL SETTINGS VARIABLES --------------------------- */
+
+/* Define global CSS variables for font size and font family */
+:root {
+  --font-size: 14px;
+  --font-family: "Inconsolata", monospace;
+}
+
+/* ------------------------ WIDGET FIND --------------------------- */
+
+/* Apply global font settings to the find input box in the editor */
+.monaco-findInput .monaco-inputbox {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* Apply global font settings to the search view query details */
+.search-view .query-details.more h4 {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* Apply global font settings to the find widget input in the editor */
+.monaco-editor .find-widget .monaco-findInput .input {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* Apply global font settings to the find widget parts in the editor */
+.monaco-editor .find-widget > .find-part {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* ------------------------ LIST TEXT --------------------------- */
+
+/* Apply global font settings to highlighted labels in lists */
+.monaco-highlighted-label {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* ------------------------ LIST LINE HEIGHT COMPENSATE --------------------------- */
+
+/* Ensure list rows are not scaled, maintaining original size */
+.monaco-list
+  > .monaco-scrollable-element
+  > .monaco-list-rows
+  > .monaco-list-row {
+  transform: scale(1, 1);
+}
+
+/* ------------------------ EXPLORER --------------------------- */
+
+/* Apply global font size to explorer folder view items */
+.explorer-folders-view
+  > .monaco-list
+  > .monaco-scrollable-element
+  > .monaco-list-rows
+  span {
+  font-size: var(--font-size);
+}
+
+/* Adjust margin for explorer folder view rows */
+.explorer-folders-view
+  > .monaco-list
+  > .monaco-scrollable-element
+  > .monaco-list-rows {
+  margin-left: -12px;
+}
+
+/* Placeholder for potential styles for expanded list rows */
+.monaco-list-row[aria-expanded] {
+}
+
+/* Commented out styles for bold font weight on expanded and selected rows */
+/* .monaco-list-row[aria-expanded="true"] {
+  font-weight: bold;
+}
+
+.monaco-list-row.selected {
+  font-weight: bold;
+} */
+
+/* ------------------------ TAB --------------------------- */
+
+/* Apply global font settings to tab labels in the editor */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab
+  .tab-label
+  a,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .title-label
+  a {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* ------------------------ STATUSBAR TEXT --------------------------- */
+
+/* Apply global font settings to the status bar text */
+.monaco-workbench .part.statusbar {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* ------------------------ STATUSBAR ICON --------------------------- */
+
+/* Apply global font size to icons in the status bar */
+.monaco-workbench
+  .part.statusbar
+  > .items-container
+  > .statusbar-item
+  span.codicon {
+  font-size: var(--font-size);
+}
+
+/* ------------------------ MAC --------------------------- */
+
+/* Apply global font settings to mac-specific elements */
+.mac {
+  --monaco-monospace-font: var(--font-family);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* ------------------------ FIXES BORDER --------------------------- */
+
+/* Add a subtle border to the composite title in the workbench */
+.monaco-workbench .part > .composite.title {
+  border-bottom: 1px solid hsla(220, 13%, 86%, 0.1);
+}
