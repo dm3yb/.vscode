@@ -1,162 +1,66 @@
 {
-	/* ------------------------ MAIN SETTINGS --------------------------- */
-
-	// Set the number of spaces a tab is equal to
+	// Commons
+	"window.openFilesInNewWindow": "off",
 	"editor.tabSize": 2,
-
-	// Enable code folding in the editor
 	"editor.folding": true,
-
-	// Use tabs instead of spaces for indentation
 	"editor.insertSpaces": false,
-
-	// Enable smooth scrolling in the editor
 	"editor.smoothScrolling": true,
-
-	// Disable the minimap on the side of the editor
 	"editor.minimap.enabled": false,
-
-	// Automatically select the first suggestion in the suggestion list
+	"editor.detectIndentation": false,
 	"editor.suggestSelection": "first",
+	// "editor.multiCursorModifier": "ctrlCmd",
+	"editor.foldingImportsByDefault": true,
 
-	// Automatically detect indentation settings
-	"editor.detectIndentation": true,
-
-	// Use Ctrl/Cmd key for multi-cursor modifier
-	"editor.multiCursorModifier": "ctrlCmd",
-
-	// Enable telemetry for Red Hat extensions
-	"redhat.telemetry.enabled": true,
-
-	// Enable GitHub Copilot auto completions
-	"github.copilot.editor.enableAutoCompletions": true,
-
-	// Disable security prompt for local file protocol handling
-	"security.promptForLocalFileProtocolHandling": false,
-
-	/* ------------------------ WRAPPING --------------------------- */
-
-	// Enable word wrapping in the editor
-	"editor.wordWrap": "on",
-
-	// Use the same indentation level for wrapped lines
+	// Word wrapping
+	"editor.wordWrap": "bounded",
 	"editor.wrappingIndent": "same",
+	"editor.wordWrapColumn": 90,
 
-	// Set the column at which to wrap lines
-	"editor.wordWrapColumn": 80,
+	// Scroll
+	"editor.scrollBeyondLastLine": true,
 
-	// Disable scrolling beyond the last line
-	"editor.scrollBeyondLastLine": false,
-
-	// Enable linked editing of HTML tags
+	// Tags
 	"editor.linkedEditing": true,
-
-	// Do not render control characters
-	"editor.renderControlCharacters": false,
-
-	// Set the delay for quick suggestions
-	"editor.quickSuggestionsDelay": 1,
-
-	// Do not highlight ambiguous Unicode characters
-	"editor.unicodeHighlight.ambiguousCharacters": false,
-
-	/* ------------------------ AUTO CLOSING TAGS --------------------------- */
-
-	// Enable auto-closing tags for HTML
 	"html.autoClosingTags": true,
-
-	// Enable auto-closing tags for JavaScript
 	"javascript.autoClosingTags": true,
-
-	// Enable auto-closing tags for TypeScript
 	"typescript.autoClosingTags": true,
 
-	// Use double quotes for attribute default values in HTML
-	"html.completion.attributeDefaultValue": "doublequotes",
+	// Symbols
+	"editor.renderControlCharacters": false,
+	"editor.unicodeHighlight.ambiguousCharacters": false,
 
-	/* ------------------------ INDENT RAINBOW & BRACKET PAIR COLORIZATION --------------------------- */
-
-	// Use classic style for indent indicators
-	"indentRainbow.indicatorStyle": "classic",
-
-	// Set the line width for light indicator style
-	"indentRainbow.lightIndicatorStyleLineWidth": 1,
-
-	// Define colors for indent indicators
-	"indentRainbow.colors": [
-		"rgba(255,255,64,0.025)",
-		"rgba(127,255,127,0.025)",
-		"rgba(255,127,255,0.025)",
-		"rgba(79,236,236,0.025)"
+	// Intellisense
+	"html.completion.attributeDefaultValue": "singlequotes",
+	"workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+	"symbols.hidesExplorerArrows": false,
+	"editor.glyphMargin": false,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "hidden",
+	"editor.accessibilitySupport": "off",
+	"workbench.layoutControl.enabled": false,
+	"workbench.editor.editorActionsLocation": "hidden",
+	"workbench.editor.empty.hint": "hidden",
+	"vscode_custom_css.imports": [
+		"file:///Users/dmitry.b25/webdev/vscode-settings/editor.css"
 	],
 
-	// Enable bracket pair colorization
-	"editor.bracketPairColorization.enabled": true,
-
-	// Show active bracket pairs with guides
-	"editor.guides.bracketPairs": "active",
-
-	/* ------------------------ APPEARANCE SETTINGS --------------------------- */
-
-	// Set the color theme for the workbench
-	"workbench.colorTheme": "One Dark Pro Darker",
-
-	// Disable glyph margin in the editor
-	"editor.glyphMargin": false,
-
-	// Hide horizontal scrollbar in the editor
-	"editor.scrollbar.horizontal": "hidden",
-
-	// Hide vertical scrollbar in the editor
-	"editor.scrollbar.vertical": "hidden",
-
-	// Set the height of editor tabs
-	"window.density.editorTabHeight": "default",
-
-	// Disable accessibility support in the editor
-	"editor.accessibilitySupport": "off",
-
-	// Disable the command center in the window
-	"window.commandCenter": false,
-
-	// Disable layout control in the workbench
-	"workbench.layoutControl.enabled": false,
-
-	// Set the icon theme for the workbench
-	"workbench.iconTheme": "catppuccin-latte",
-
-	// Import custom CSS for VSCode
-	"vscode_custom_css.imports": ["file:///Users/OSProfileUserName/someFolder/editor.css"],
-
-	/* ------------------------ CURSOR SETTINGS --------------------------- */
-
-	// Set the cursor blinking style
+	// Cursor
 	"editor.cursorBlinking": "expand",
-
-	// Set the cursor style
 	"editor.cursorStyle": "line-thin",
-
-	// Enable smooth caret animation for the cursor
 	"editor.cursorSmoothCaretAnimation": "explicit",
 
-	/* ------------------------ FONT SETTINGS --------------------------- */
-
-	// Set the font family for the editor
-	"editor.fontFamily": "Geist Mono, JetBrains Mono",
-
-	// Set the font size for the editor
-	"editor.fontSize": 13,
-
-	// Set the line height for the editor
-	"editor.lineHeight": 2.1,
-
-	// Enable font ligatures in the editor
+	// Fonts
+	"editor.fontSize": 14,
+	"editor.lineHeight": 2.25,
 	"editor.fontLigatures": true,
+	"editor.fontWeight": 400,
+	"editor.fontFamily": "Cascadia Code NF, JetBrains Mono, Operator Mono Lig, Ubuntu Mono, Geist Mono",
+	"editor.inlayHints.fontFamily": "Operator Mono Lig",
+	"editor.codeLensFontFamily": "Operator Mono Lig",
+	"debug.console.fontFamily": "Operator Mono Lig",
+	"workbench.fontAliasing": "default",
 
-	// Set the font family for inlay hints
-	"editor.inlayHints.fontFamily": "JetBrains Mono",
-
-	// Customize token colors in the editor
+	// Token's
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
 			{
@@ -169,134 +73,135 @@
 		]
 	},
 
-	// Enable font aliasing for better appearance on macOS
-	"workbench.fontAliasing": "antialiased",
+	// Explorer Tree
+	"workbench.tree.indent": 20,
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.colorCustomizations": {
+		"tree.indentGuidesStroke": "#ffffff40"
+	},
 
-	/* ------------------------ TERMINAL SETTINGS --------------------------- */
+	"indentRainbow.colors": [
+		"rgba(255,255,64,0.025)",
+		"rgba(127,255,127,0.025)",
+		"rgba(255,127,255,0.025)",
+		"rgba(79,236,236,0.025)"
+	],
 
-	// Set the font family for the integrated terminal
-	"terminal.integrated.fontFamily": "JetBrains Mono, Geist Mono",
+	// Bracket Pair Colorizer
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": "active",
+	"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+	"bracket-pair-colorizer-2.colorMode": "Consecutive",
+	"bracket-pair-colorizer-2.highlightActiveScope": true,
+	"bracket-pair-colorizer-2.showBracketsInGutter": true,
+	"bracket-pair-colorizer-2.rulerPosition": "Left",
 
-	// Set the font size for the integrated terminal
+	// Terminal
+	"terminal.integrated.fontFamily": "Ubuntu Mono",
 	"terminal.integrated.fontSize": 13,
-
-	// Set the line height for the integrated terminal
 	"terminal.integrated.lineHeight": 1.9,
 
-	/* ------------------------ EXPLORER SETTINGS --------------------------- */
-
-	// Disable compact folders in the explorer
-	"explorer.compactFolders": false,
-
-	// Disable confirmation for drag and drop in the explorer
-	"explorer.confirmDragAndDrop": false,
-
-	// Set tab sizing to shrink in the workbench editor
-	"workbench.editor.tabSizing": "shrink",
-
-	// Disable confirmation for delete in the explorer
+	// Explorer
 	"explorer.confirmDelete": false,
-
-	// Open a new untitled file on startup
+	"explorer.compactFolders": false,
+	"explorer.confirmDragAndDrop": false,
+	"workbench.editor.tabSizing": "shrink",
 	"workbench.startupEditor": "newUntitledFile",
 
-	/* ------------------------ DEBUG SETTINGS --------------------------- */
-
-	// Hide the debug toolbar
+	// Debug's
 	"debug.toolBarLocation": "hidden",
-
-	// Do not focus the window on break
 	"debug.focusWindowOnBreak": false,
-
-	// Do not focus the editor on break
 	"debug.focusEditorOnBreak": false,
-
-	// Do not show inline breakpoint candidates
 	"debug.showInlineBreakpointCandidates": false,
-
-	// Do not show breakpoints in the overview ruler
 	"debug.showBreakpointsInOverviewRuler": false,
 
-	/* ------------------------ EMMET SETTINGS --------------------------- */
-
-	// Include additional languages for Emmet
+	// EMMET
 	"emmet.includeLanguages": {
 		"blade": "html",
-		"javascript": "javascriptreact",
-		"postcss": "css",
-		"vue": "html"
+		"javascript": "javascriptreact"
 	},
-
-	// Trigger Emmet expansions on Tab key
 	"emmet.triggerExpansionOnTab": true,
 
-	// Set syntax profiles for Emmet
-	"emmet.syntaxProfiles": {
-		"javascript": "jsx",
-		"vue": "html"
-	},
-
-	// Set variables for Emmet
-	"emmet.variables": {
-		"lang": "en"
-	},
-
-	/* ------------------------ BREADCRUMBS SETTINGS --------------------------- */
-
-	// Disable icons in breadcrumbs
+	// Breadcrumbs
 	"breadcrumbs.icons": false,
-
-	// Disable keys in breadcrumbs
 	"breadcrumbs.showKeys": false,
-
-	// Disable files in breadcrumbs
 	"breadcrumbs.showFiles": false,
-
-	// Disable symbol path in breadcrumbs
 	"breadcrumbs.symbolPath": "off",
-
-	// Disable arrays in breadcrumbs
 	"breadcrumbs.showArrays": false,
-
-	// Disable events in breadcrumbs
 	"breadcrumbs.showEvents": false,
-
-	// Disable fields in breadcrumbs
 	"breadcrumbs.showFields": false,
-
-	// Disable classes in breadcrumbs
 	"breadcrumbs.showClasses": false,
-
-	// Disable methods in breadcrumbs
 	"breadcrumbs.showMethods": false,
-
-	// Disable booleans in breadcrumbs
 	"breadcrumbs.showBooleans": false,
-
-	// Disable functions in breadcrumbs
 	"breadcrumbs.showFunctions": false,
-
-	// Disable constants in breadcrumbs
 	"breadcrumbs.showConstants": false,
-
-	// Disable enum members in breadcrumbs
 	"breadcrumbs.showEnumMembers": false,
-
-	// Disable constructors in breadcrumbs
 	"breadcrumbs.showConstructors": false,
 
-	/* ------------------------ SPELL CHECKER SETTINGS --------------------------- */
+	// Hide files
+	"files.exclude": {
+		"**/.expo": true,
+		"**/.expo-shared": true,
+		"**/.idea": true,
+		"**/.next": true,
+		"**/.nuxt": true,
+		"**/dist": true
+	},
 
-	// Set the languages for spell checker
-	"cSpell.language": "en,ru,sk,de,cz",
+	// Formatters
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"editor.formatOnSave": true,
+	"prettier.useEditorConfig": true,
+	"prettier.configPath": ".prettierrc",
+	"files.autoSave": "onFocusChange",
+	"editor.formatOnType": true,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.organizeImports": "explicit",
+		"source.sortMembers": "explicit",
+		"source.addMissingImports.ts": "explicit"
+	},
+	"prettier.arrowParens": "avoid",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.inlineSuggest.enabled": true,
+	"[blade]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.documentSelectors": ["**/*.blade.php"],
+	"[php]": {
+		"editor.defaultFormatter": "open-southeners.laravel-pint"
+	},
 
-	// Set user-defined words for spell checker
-	"cSpell.userWords": [],
+	// JS & TS
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.preferences.quoteStyle": "double",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"javascript.preferences.quoteStyle": "double",
+	"javascript.format.semicolons": "remove",
+	"typescript.format.semicolons": "remove",
+	"js/ts.implicitProjectConfig.experimentalDecorators": true,
 
-	// Enable spell checker
-	"cSpell.enabled": true,
+	// Next.js
+	"workbench.editor.customLabels.patterns": {
+		"**/app/**/[[]*[]]/[[]*[]]/page.tsx": "${dirname(2)}/${dirname(1)}/${dirname}/page.tsx",
+		"**/app/**/[[]*[]]/page.tsx": "${dirname(1)}/${dirname}/page.tsx",
+		"**/app/**/page.tsx": "${dirname}/page.tsx",
 
-	// Enable spell checker for specific file types
+		"**/app/**/[[]*[]]/[[]*[]]/layout.tsx": "${dirname(2)}/${dirname(1)}/${dirname}/layout.tsx",
+		"**/app/**/[[]*[]]/layout.tsx": "${dirname(1)}/${dirname}/layout.tsx",
+		"**/app/**/layout.tsx": "${dirname}/layout.tsx"
+	},
+
+	// Spell checker
+	"editor.hideCursorInOverviewRuler": true,
+	"git.enableSmartCommit": true,
+
+	"cSpell.language": "en,sk,cs,ua,ru,en-gb",
 	"cSpell.enableFiletypes": [
 		"markdown",
 		"php",
@@ -311,7 +216,6 @@
 		"vue"
 	],
 
-	// Allow specific Unicode characters
 	"editor.unicodeHighlight.allowedCharacters": {
 		"а": true,
 		"с": true,
@@ -320,179 +224,32 @@
 		"е": true
 	},
 
-	// Hide cursor in the overview ruler
-	"editor.hideCursorInOverviewRuler": true,
-
-	// Enable smart commit for Git
-	"git.enableSmartCommit": true,
-
-	/* ------------------------ HIDE FILES SETTINGS --------------------------- */
-
-	// Exclude specific files and folders from the explorer
-	"files.exclude": {
-		"**/.expo": true,
-		"**/.expo-shared": true,
-		"**/.idea": true,
-		"**/.next": true,
-		"**/.nuxt": true,
-		"**/dist": true
-	},
-
-	/* ------------------------ INLAY HINTS SETTINGS --------------------------- */
-
-	// Enable inlay hints in the editor
-	"editor.inlayHints.enabled": "on",
-
-	// Customize colors for parameter hints
-	"workbench.colorCustomizations": {
-		"parameterHints.hintBackground": "#252930",
-		"parameterHints.hintForeground": "#707780"
-	},
-
-	/* ------------------------ OTHERS --------------------------- */
-
-	// Set the default language for new files
+	// Others
 	"files.defaultLanguage": "plaintext",
-
-	// Do not ignore trim whitespace in diff editor
 	"diffEditor.ignoreTrimWhitespace": false,
-
-	// Set the behavior for untrusted files
 	"security.workspace.trust.untrustedFiles": "open",
-
-	// Enable IntelliCode suggestions
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
-	// Confirm before closing the window with keyboard only
 	"window.confirmBeforeClose": "keyboardOnly",
-
-	// Always open repository in parent folders
 	"git.openRepositoryInParentFolders": "always",
-
-	// Open multiple definitions in Peek view
-	"editor.gotoLocation.multipleDefinitions": "gotoAndPeek",
-
-	/* ------------------------ FORMATTERS SETTINGS --------------------------- */
-
-	// Do not use semicolons in Prettier
-	"prettier.semi": false,
-
-	// Use tabs instead of spaces in Prettier
-	"prettier.useTabs": true,
-
-	// Format code on save
-	"editor.formatOnSave": true,
-
-	// Use single quotes in Prettier
-	"prettier.singleQuote": true,
-
-	// Use single quotes in JSX in Prettier
-	"prettier.jsxSingleQuote": true,
-
-	// Organize imports on save
-	"editor.codeActionsOnSave": {
-		"source.organizeImports": "explicit"
-	},
-
-	// Avoid parentheses for arrow functions with a single parameter in Prettier
-	"prettier.arrowParens": "avoid",
-
-	// Set the default formatter for the editor
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-
-	// Enable inline suggestions in the editor
-	"editor.inlineSuggest.enabled": true,
-
-	// Automatically save files on focus change
-	"files.autoSave": "onFocusChange",
-
-	// Do not format code on paste
-	"editor.formatOnPaste": false,
-
-	// Do not use EditorConfig settings in Prettier
-	"prettier.useEditorConfig": false,
-
-	// Set the path to the Prettier configuration file
-	"prettier.configPath": ".prettierrc",
-
-	// Format code on type
-	"editor.formatOnType": true,
-
-	// Set the default formatter for JSONC files
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	// Set the default formatter for JavaScript files
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	// Set the default formatter for TypeScript files
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	// Set the default formatter for TypeScript React files
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	// Set the default formatter for JavaScript React files
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	// Set the default formatter for Blade files
-	"[blade]": {
-		"editor.defaultFormatter": "onecentlin.laravel-blade"
-	},
-
-	// Set the default formatter for PHP files
-	"[php]": {
-		"editor.defaultFormatter": "DEVSENSE.phptools-vscode"
-	},
-
-	// Set the default formatter for YAML files
-	"[yaml]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	// Enable colorization for specific languages
-	"colorize.languages": [
-		"javascript",
-		"php",
-		"blade",
-		"json",
-		"yaml",
-		"html",
-		"css",
-		"scss",
-		"less",
-		"markdown",
-		"typescript",
-		"typescriptreact",
-		"javascriptreact",
-		"vue"
-	],
-
-	/* ------------------------ JAVASCRIPT & TYPESCRIPT SETTINGS --------------------------- */
-
-	// Always update imports on file move for JavaScript
-	"javascript.updateImportsOnFileMove.enabled": "always",
-
-	// Always update imports on file move for TypeScript
-	"typescript.updateImportsOnFileMove.enabled": "always",
-
-	// Use double quotes for TypeScript
-	"typescript.preferences.quoteStyle": "double",
-
-	// Use double quotes for JavaScript
-	"javascript.preferences.quoteStyle": "double",
-
-	// Remove semicolons in JavaScript formatting
-	"javascript.format.semicolons": "remove",
-
-	// Remove semicolons in TypeScript formatting
-	"typescript.format.semicolons": "remove"
+	"editor.gotoLocation.multipleDefinitions": "peek",
+	"editor.stickyScroll.enabled": false,
+	"workbench.tree.enableStickyScroll": false,
+	"window.commandCenter": false,
+	"workbench.statusBar.visible": true,
+	"editor.formatOnPaste": true,
+	"workbench.colorTheme": "One Dark Pro Darker",
+	"laravel-pint.enable": true,
+	"extensions.ignoreRecommendations": true,
+	"bracket-pair-colorizer-2.depreciation-notice": false,
+	"redhat.telemetry.enabled": true,
+	"pieces.cloudCapabilities": "Blended",
+	"pieces.telemetry": true,
+	"workbench.activityBar.location": "top",
+	"pieces.OS.launchOnStartup": "Yes",
+	"css.hover.references": false,
+	"less.hover.references": false,
+	"scss.hover.references": false,
+	"html.hover.references": false,
+	"html.hover.documentation": false,
+	"workbench.editor.enablePreview": false
 }
